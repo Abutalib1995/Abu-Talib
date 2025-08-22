@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abu Talib - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Abu Talib</h1>
+    <p>Web designer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a web designer passionate about creating clean and user-friendly experiences.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <h3>Project One</h3>
+          <p>Short description of the project goes here.</p>
+        </li>
+        <li>
+          <h3>Project Two</h3>
+          <p>Another description that highlights your skills.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Abu Talib. All rights reserved.</p>
+  </footer>
+  <script>
+    // Update footer year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
