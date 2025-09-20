@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎭 Random Joke Generator</h1>
+            <p>Get ready to laugh with our collection of random jokes!</p>
+        </header>
+
+        <main>
+            <div class="joke-container">
+                <div id="joke-display" class="joke-display">
+                    <p class="welcome-message">Click the button below to get a random joke!</p>
+                </div>
+                
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Fetching a joke for you...</p>
+                </div>
+                
+                <div id="error-message" class="error-message hidden">
+                    <p>Oops! Something went wrong. Please try again.</p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="get-joke-btn" class="get-joke-btn">
+                    Get New Joke 😄
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://official-joke-api.appspot.com/" target="_blank">Official Joke API</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
